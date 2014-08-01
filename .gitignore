@@ -2,3 +2,8 @@
 *.kate-swp
 .DS_Store
 .directory
+bin
+include
+local
+lib
+*.pyc
