@@ -6,4 +6,7 @@ bin
 include
 local
 lib
+logs
+cache
+gateone.pid
 *.pyc
