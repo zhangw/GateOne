@@ -742,6 +742,8 @@ GateOne.Base.update(GateOne.Terminal.Input, {
                             // Make a note of the text leading up to pressing of the Enter key so we can (do our best to) keep track of commands
                             E.trigger("terminal:enter_key");
                             t.Input.lastCommand = t.Input.commandBuffer;
+                            // added by wen.zhang
+                            logInfo("lastCommand: "+t.Input.lastCommand);
                             t.Input.commandBuffer = "";
                         }
                     }
