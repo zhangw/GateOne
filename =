@@ -1,0 +1,8 @@
+Downloading/unpacking tornado
+  Running setup.py egg_info for package tornado
+    
+Downloading/unpacking 3.2
+  Real name of requirement 3.2 is 3-1
+  Could not find any downloads that satisfy the requirement 3.2
+No distributions at all found for 3.2
+Storing complete log in /root/.pip/pip.log

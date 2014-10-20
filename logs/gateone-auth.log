@@ -1,0 +1,76 @@
+[I 140801 12:02:59 server:1764] WebSocket opened (ANONYMOUS 127.0.0.1) via origin 127.0.0.1:10443.
+[I 140801 12:02:59 server:2351] User ANONYMOUS authenticated successfully via origin 127.0.0.1:10443 (location: default).
+[I 140801 12:03:25 server:1899] {"ip_address": "127.0.0.1", "location": "default", "upn": "ANONYMOUS"} WebSocket closed (ANONYMOUS 127.0.0.1).
+[I 140801 12:03:30 server:1764] WebSocket opened (ANONYMOUS 127.0.0.1) via origin 127.0.0.1:10443.
+[I 140801 12:03:31 server:2351] User ANONYMOUS authenticated successfully via origin 127.0.0.1:10443 (location: default).
+[I 140801 12:07:31 server:1764] WebSocket opened (ANONYMOUS 127.0.0.1) via origin 127.0.0.1:10443.
+[I 140801 12:07:31 server:2351] User ANONYMOUS authenticated successfully via origin 127.0.0.1:10443 (location: default).
+[I 140801 12:09:05 server:1899] {"ip_address": "127.0.0.1", "location": "default", "upn": "ANONYMOUS"} WebSocket closed (ANONYMOUS 127.0.0.1).
+[I 140804 13:42:42 server:1764] WebSocket opened (ANONYMOUS 127.0.0.1) via origin 127.0.0.1:10443.
+[I 140804 13:42:43 server:2351] User ANONYMOUS authenticated successfully via origin 127.0.0.1:10443 (location: default).
+[I 140812 16:23:47 server:1764] WebSocket opened (ANONYMOUS 127.0.0.1) via origin 127.0.0.1:10443.
+[I 140812 16:23:47 server:2351] User ANONYMOUS authenticated successfully via origin 127.0.0.1:10443 (location: default).
+[I 140812 16:36:30 server:1899] {"ip_address": "127.0.0.1", "location": "default", "upn": "ANONYMOUS"} WebSocket closed (ANONYMOUS 127.0.0.1).
+[I 140814 10:04:06 server:1764] WebSocket opened (ANONYMOUS 127.0.0.1) via origin 127.0.0.1:10443.
+[I 140814 10:04:06 server:2351] User ANONYMOUS authenticated successfully via origin 127.0.0.1:10443 (location: default).
+[I 140814 10:26:22 server:1899] {"ip_address": "127.0.0.1", "location": "default", "upn": "ANONYMOUS"} WebSocket closed (ANONYMOUS 127.0.0.1).
+[I 140814 10:26:45 server:1764] WebSocket opened (ANONYMOUS 127.0.0.1) via origin 127.0.0.1:10443.
+[I 140814 10:26:45 server:2351] User ANONYMOUS authenticated successfully via origin 127.0.0.1:10443 (location: default).
+[I 140814 10:43:34 server:1764] WebSocket opened (ANONYMOUS 127.0.0.1) via origin 127.0.0.1:10443.
+[I 140814 10:43:34 server:2351] User ANONYMOUS authenticated successfully via origin 127.0.0.1:10443 (location: default).
+[I 140814 11:08:13 server:1899] {"ip_address": "127.0.0.1", "location": "default", "upn": "ANONYMOUS"} WebSocket closed (ANONYMOUS 127.0.0.1).
+[I 140814 11:08:14 server:1764] WebSocket opened (ANONYMOUS 127.0.0.1) via origin 127.0.0.1:10443.
+[I 140814 11:08:15 server:2351] User ANONYMOUS authenticated successfully via origin 127.0.0.1:10443 (location: default).
+[I 140814 11:23:05 server:1764] WebSocket opened (ANONYMOUS 127.0.0.1) via origin 127.0.0.1:10443.
+[I 140814 11:23:06 server:2351] User ANONYMOUS authenticated successfully via origin 127.0.0.1:10443 (location: default).
+[I 140814 11:26:58 server:1764] WebSocket opened (ANONYMOUS 127.0.0.1) via origin 127.0.0.1:10443.
+[I 140814 11:26:58 server:2351] User ANONYMOUS authenticated successfully via origin 127.0.0.1:10443 (location: default).
+[I 140814 12:55:32 server:1899] {"ip_address": "127.0.0.1", "location": "default", "upn": "ANONYMOUS"} WebSocket closed (ANONYMOUS 127.0.0.1).
+[I 140814 12:55:39 server:1764] WebSocket opened (ANONYMOUS 127.0.0.1) via origin 127.0.0.1:10443.
+[I 140814 12:55:39 server:2351] User ANONYMOUS authenticated successfully via origin 127.0.0.1:10443 (location: default).
+[I 140814 12:57:30 server:1899] {"ip_address": "127.0.0.1", "location": "default", "upn": "ANONYMOUS"} WebSocket closed (ANONYMOUS 127.0.0.1).
+[I 140814 12:58:09 server:1764] WebSocket opened (ANONYMOUS 127.0.0.1) via origin 127.0.0.1:10443.
+[I 140814 12:58:09 server:2351] User ANONYMOUS authenticated successfully via origin 127.0.0.1:10443 (location: default).
+[I 140814 12:58:48 server:1899] {"ip_address": "127.0.0.1", "location": "default", "upn": "ANONYMOUS"} WebSocket closed (ANONYMOUS 127.0.0.1).
+[I 140814 12:58:52 server:1764] WebSocket opened (ANONYMOUS 127.0.0.1) via origin 127.0.0.1:10443.
+[I 140814 12:58:52 server:2351] User ANONYMOUS authenticated successfully via origin 127.0.0.1:10443 (location: default).
+[I 140814 13:05:31 server:1899] {"ip_address": "127.0.0.1", "location": "default", "upn": "ANONYMOUS"} WebSocket closed (ANONYMOUS 127.0.0.1).
+[I 140814 13:05:38 server:1764] WebSocket opened (ANONYMOUS 127.0.0.1) via origin 127.0.0.1:10443.
+[I 140814 13:05:39 server:2351] User ANONYMOUS authenticated successfully via origin 127.0.0.1:10443 (location: default).
+[I 140814 13:25:06 server:1764] WebSocket opened (ANONYMOUS 127.0.0.1) via origin 127.0.0.1:10443.
+[I 140814 13:25:06 server:2351] User ANONYMOUS authenticated successfully via origin 127.0.0.1:10443 (location: default).
+[I 140814 13:54:49 server:1899] {"ip_address": "127.0.0.1", "location": "default", "upn": "ANONYMOUS"} WebSocket closed (ANONYMOUS 127.0.0.1).
+[I 140814 13:54:50 server:1764] WebSocket opened (ANONYMOUS 127.0.0.1) via origin 127.0.0.1:10443.
+[I 140814 13:54:50 server:2351] User ANONYMOUS authenticated successfully via origin 127.0.0.1:10443 (location: default).
+[I 140814 14:07:43 server:1899] {"ip_address": "127.0.0.1", "location": "default", "upn": "ANONYMOUS"} WebSocket closed (ANONYMOUS 127.0.0.1).
+[I 140825 10:57:42 server:1764] WebSocket opened (ANONYMOUS 127.0.0.1) via origin 127.0.0.1:10443.
+[I 140825 10:57:42 server:2351] User ANONYMOUS authenticated successfully via origin 127.0.0.1:10443 (location: default).
+[I 140825 11:21:00 server:1899] {"ip_address": "127.0.0.1", "location": "default", "upn": "ANONYMOUS"} WebSocket closed (ANONYMOUS 127.0.0.1).
+[I 140825 11:21:10 server:1764] WebSocket opened (ANONYMOUS 127.0.0.1) via origin 127.0.0.1:10443.
+[I 140825 11:21:10 server:2351] User ANONYMOUS authenticated successfully via origin 127.0.0.1:10443 (location: default).
+[I 140825 12:32:59 server:1899] {"ip_address": "127.0.0.1", "location": "default", "upn": "ANONYMOUS"} WebSocket closed (ANONYMOUS 127.0.0.1).
+[I 140825 12:33:00 server:1764] WebSocket opened (ANONYMOUS 127.0.0.1) via origin 127.0.0.1:10443.
+[I 140825 12:33:00 server:2351] User ANONYMOUS authenticated successfully via origin 127.0.0.1:10443 (location: default).
+[I 140825 14:34:47 server:1899] {"ip_address": "127.0.0.1", "location": "default", "upn": "ANONYMOUS"} WebSocket closed (ANONYMOUS 127.0.0.1).
+[I 140825 14:34:53 server:1764] WebSocket opened (ANONYMOUS 127.0.0.1) via origin 127.0.0.1:10443.
+[I 140825 14:34:54 server:2351] User ANONYMOUS authenticated successfully via origin 127.0.0.1:10443 (location: default).
+[I 140825 14:39:18 server:1899] {"ip_address": "127.0.0.1", "location": "default", "upn": "ANONYMOUS"} WebSocket closed (ANONYMOUS 127.0.0.1).
+[I 140825 14:39:18 server:1764] WebSocket opened (ANONYMOUS 127.0.0.1) via origin 127.0.0.1:10443.
+[I 140825 14:39:18 server:2351] User ANONYMOUS authenticated successfully via origin 127.0.0.1:10443 (location: default).
+[I 140828 20:35:59 server:1764] WebSocket opened (ANONYMOUS 127.0.0.1) via origin 127.0.0.1:10443.
+[I 140828 20:35:59 server:2351] User ANONYMOUS authenticated successfully via origin 127.0.0.1:10443 (location: default).
+[I 140828 21:09:02 server:1764] WebSocket opened (ANONYMOUS 127.0.0.1) via origin 127.0.0.1:10443.
+[I 140828 21:09:02 server:2351] User ANONYMOUS authenticated successfully via origin 127.0.0.1:10443 (location: default).
+[I 140828 21:10:09 server:1764] WebSocket opened (ANONYMOUS 127.0.0.1) via origin 127.0.0.1:10443.
+[I 140828 21:10:09 server:2351] User ANONYMOUS authenticated successfully via origin 127.0.0.1:10443 (location: default).
+[I 141016 16:46:54 server:1764] WebSocket opened (ANONYMOUS 127.0.0.1) via origin 127.0.0.1:10443.
+[I 141016 16:46:54 server:2351] User ANONYMOUS authenticated successfully via origin 127.0.0.1:10443 (location: default).
+[I 141016 17:45:56 server:1764] WebSocket opened (ANONYMOUS 127.0.0.1) via origin 127.0.0.1:10443.
+[I 141016 17:45:56 server:1764] WebSocket opened (ANONYMOUS 127.0.0.1) via origin 127.0.0.1:10443.
+[I 141016 17:46:23 server:1899] {"ip_address": "127.0.0.1", "upn": "ANONYMOUS"} WebSocket closed (ANONYMOUS 127.0.0.1).
+[I 141016 17:46:29 server:1764] WebSocket opened (ANONYMOUS 127.0.0.1) via origin 127.0.0.1:10443.
+[I 141016 17:46:29 server:2351] User ANONYMOUS authenticated successfully via origin 127.0.0.1:10443 (location: default).
+[I 141020 14:22:47 server:1764] WebSocket opened (ANONYMOUS 127.0.0.1) via origin 127.0.0.1:10443.
+[I 141020 14:22:47 server:2351] User ANONYMOUS authenticated successfully via origin 127.0.0.1:10443 (location: default).
+[I 141020 14:28:54 server:1764] WebSocket opened (ANONYMOUS 127.0.0.1) via origin 127.0.0.1:10443.
+[I 141020 14:28:55 server:2351] User ANONYMOUS authenticated successfully via origin 127.0.0.1:10443 (location: default).

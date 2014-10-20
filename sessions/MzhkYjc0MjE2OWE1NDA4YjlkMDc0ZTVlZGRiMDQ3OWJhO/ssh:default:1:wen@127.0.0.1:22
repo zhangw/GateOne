@@ -1,0 +1,9 @@
+#!/bin/sh
+# This variable is for easy retrieval later
+SSH_SOCKET='/mnt/sdb5/codes/python/GateOne/sessions/MzhkYjc0MjE2OWE1NDA4YjlkMDc0ZTVlZGRiMDQ3OWJhO/mR4aJiMQ'
+trap "rm -f /mnt/sdb5/codes/python/GateOne/sessions/MzhkYjc0MjE2OWE1NDA4YjlkMDc0ZTVlZGRiMDQ3OWJhO/ssh:default:1:wen@127.0.0.1:22" EXIT
+ssh -M -S'/mnt/sdb5/codes/python/GateOne/sessions/MzhkYjc0MjE2OWE1NDA4YjlkMDc0ZTVlZGRiMDQ3OWJhO/mR4aJiMQ' -x -F'/mnt/sdb5/codes/python/GateOne/users/ANONYMOUS/.ssh/config' -oNoHostAuthenticationForLocalhost=yes -oVerifyHostKeyDNS=yes -oPreferredAuthentications='keyboard-interactive,password' -oIdentitiesOnly=yes -oSendEnv='GO_TERM GO_LOCATION GO_SESSION' -p 22 -l wen -oUserKnownHostsFile=\"/mnt/sdb5/codes/python/GateOne/users/ANONYMOUS/.ssh/known_hosts\" 127.0.0.1 
+echo '[Press Enter to close this terminal]'
+read waitforuser
+rm -f /mnt/sdb5/codes/python/GateOne/sessions/MzhkYjc0MjE2OWE1NDA4YjlkMDc0ZTVlZGRiMDQ3OWJhO/ssh:default:1:wen@127.0.0.1:22 # Cleanup
+exit 0
