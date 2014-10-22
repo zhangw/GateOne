@@ -74,7 +74,9 @@ GateOne.Base.update(GateOne.Terminal.Input, {
             if (charString != "undefined") {
                 var message = {'c': charString};
                 E.trigger("terminal:send_chars", message); // Called before the message is sent so it can be manipulated.
-                go.ws.send(JSON.stringify(message));
+                // modified by wen.zhang
+                message = JSON.stringify(message);
+                go.ws.send(message);
                 t.doingUpdate = false;
             } else {
                 t.doingUpdate = false;
@@ -742,7 +744,9 @@ GateOne.Base.update(GateOne.Terminal.Input, {
                             // Make a note of the text leading up to pressing of the Enter key so we can (do our best to) keep track of commands
                             E.trigger("terminal:enter_key");
                             t.Input.lastCommand = t.Input.commandBuffer;
-                            // added by wen.zhang
+                            // added by wen.zhang, the lastCommand is not what I expected indeed,because
+                            // the commandBuffer includes all the key strokes not only the 'real
+                            // commands' such as the '\t','backspace' characters.
                             logInfo("lastCommand: "+t.Input.lastCommand);
                             t.Input.commandBuffer = "";
                         }
