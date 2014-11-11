@@ -12,3 +12,5 @@ gateone.pid
 users
 sessions
 *.pyc
+*.swp
+conf.d

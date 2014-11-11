@@ -1345,6 +1345,7 @@ class ApplicationWebSocket(WebSocketHandler, OnOffMixin):
     file_watcher = None    # Will be replaced with a PeriodicCallback
     prefs = {} # Gets updated with every call to initialize()
     def __init__(self, application, request, **kwargs):
+        logging.debug("ApplicationWebSocket initialization, application:{0}, request:{1}".format(application,request))
         self.user = None
         self.actions = {
             'go:ping': self.pong,
@@ -1474,6 +1475,8 @@ class ApplicationWebSocket(WebSocketHandler, OnOffMixin):
             return
         cls.prefs = prefs
         # Reset the memoization dict so that everything using
+        #debugeer;
+        import pdb; pdb.set_trace()
         # applicable_policies() gets the latest & greatest settings
         MEMO.clear()
 
@@ -1580,9 +1583,10 @@ class ApplicationWebSocket(WebSocketHandler, OnOffMixin):
         if not apps:
             return
         for app in apps:
+            #create the instance of application
             instance = app(self)
             self.apps.append(instance)
-            logging.debug("Initializing %s" % instance)
+            logging.debug("Initializing %s with the ApplicationWebSocket:%s" %(instance,self))
             if hasattr(instance, 'initialize'):
                 instance.initialize()
 
@@ -1835,7 +1839,7 @@ class ApplicationWebSocket(WebSocketHandler, OnOffMixin):
         contents.
         """
         # This is super useful when debugging:
-        logging.debug("message: %s" % repr(message))
+        logging.debug("message from client: %s" % repr(message))
         if self.origin_denied:
             self.auth_log.error(_("Message rejected due to invalid origin."))
             self.close() # Close the WebSocket
@@ -3768,6 +3772,7 @@ class GateOneApp(tornado.web.Application):
             (r"%sstatic/(.*)" % url_prefix, StaticHandler, {"path": static_url}
         ))
         # Hook up the hooks
+        logging.debug("PLUGIN_HOOKS:%s"%PLUGIN_HOOKS);
         for plugin_name, hooks in PLUGIN_HOOKS.items():
             if 'Web' in hooks:
                 # Apply the plugin's Web handlers
@@ -3906,6 +3911,7 @@ def main(installed=True):
         enabled_applications = [a.lower() for a in enabled_applications]
         go_settings = all_settings['*']['gateone']
     PLUGINS = get_plugins(os.path.join(GATEONE_DIR, 'plugins'), enabled_plugins)
+    logging.debug('PLUGINS:%s'%PLUGINS);
     imported = load_modules(PLUGINS['py'])
     for plugin in imported:
         try:
@@ -3916,6 +3922,7 @@ def main(installed=True):
             pass # No hooks--probably just a supporting .py file.
     APPLICATIONS = get_applications(
         os.path.join(GATEONE_DIR, 'applications'), enabled_applications)
+    logging.debug('APPLICATIONS:%s'%APPLICATIONS);
     # NOTE: load_modules() imports all the .py files in applications.  This
     # means that applications can place calls to tornado.options.define()
     # anywhere in their .py files and they should automatically be usable by the
@@ -3930,6 +3937,7 @@ def main(installed=True):
     # application has additional calls to define().
     try:
         commands = tornado.options.parse_command_line()
+        logging.debug('commands:%s'%commands);
     except IOError:
         print(_("Could not write to the log: %s") % options.log_file_prefix)
         print(_(
@@ -4043,8 +4051,10 @@ def main(installed=True):
             else:
                 cli_commands[command](commands[1:])
         sys.exit(0)
+#    logging.info(_("Imported applications: {0}".format(
+#        ', '.join([a.info['name'] for a in APPLICATIONS]))))
     logging.info(_("Imported applications: {0}".format(
-        ', '.join([a.info['name'] for a in APPLICATIONS]))))
+        ', '.join([str(a) for a in APPLICATIONS]))))
     # Change the uid/gid strings into integers
     try:
         uid = int(go_settings['uid'])
@@ -4267,8 +4277,10 @@ def main(installed=True):
             continue # These don't belong
         if option not in go_settings:
             go_settings[option] = options[option]
+    gateoneapp_instance = GateOneApp(settings=go_settings, web_handlers=web_handlers)
+    logging.info("gateoneapp: handlers:{0}, settings:{1}".format(str(gateoneapp_instance.handlers),str(gateoneapp_instance.settings)))
     https_server = tornado.httpserver.HTTPServer(
-        GateOneApp(settings=go_settings, web_handlers=web_handlers),
+        gateoneapp_instance,
         ssl_options=ssl_options)
     https_redirect = tornado.web.Application(
         [(r".*", HTTPSRedirectHandler),],

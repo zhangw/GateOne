@@ -167,6 +167,7 @@ class TerminalApplication(GOApplication):
     """
     A Gate One Application (`GOApplication`) that handles creating and
     controlling terminal applications running on the Gate One server.
+    The instance will be created in the initialize method of ApplicationWebSocket.
     """
     info = {
         'name': "Terminal",
@@ -999,6 +1000,8 @@ class TerminalApplication(GOApplication):
         without having to worry about figuring out if a new terminal already
         exists or not).
         """
+        #debugeer;
+        import pdb; pdb.set_trace()
         term = int(settings['term'])
         # TODO: Make these specific to each terminal:
         rows = settings['rows']

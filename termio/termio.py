@@ -1286,6 +1286,7 @@ class MultiplexPOSIXIOLoop(BaseMultiplex):
         self.rows = rows
         self.cols = cols
         self.em_dimensions = em_dimensions
+        import pdb; pdb.set_trace()
         import pty
         pid, fd = pty.fork()
         if pid == 0: # We're inside the child process
@@ -1347,7 +1348,7 @@ class MultiplexPOSIXIOLoop(BaseMultiplex):
             os.execvpe(cmd[0], cmd, env)
             os._exit(0)
         else: # We're inside this Python script
-            logging.debug("spawn() pid: %s" % pid)
+            logging.debug("spawn() pid: %s, fd of child process: %s" % (pid,fd))
             self._alive = True
             self.fd = fd
             self.env = env

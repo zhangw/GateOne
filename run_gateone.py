@@ -10,6 +10,7 @@ automatically.
 import os, sys
 
 WORKING_DIR = os.path.dirname(os.path.abspath(__file__))
+#WORKING_DIR = os.path.curdir
 
 # Insert the path to this script's directory so that the Python interpreter can
 # import gateone, termio, terminal, and onoff:
